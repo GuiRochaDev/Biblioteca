@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from .models import Autor
+from .models import livro
 
-admin.site.register(Autor)
+admin.site.register(livro)

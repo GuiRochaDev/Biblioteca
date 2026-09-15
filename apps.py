@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class AutorConfig(AppConfig):
-    name = 'Autor'
+class LivrosConfig(AppConfig):
+    name = 'livros'
