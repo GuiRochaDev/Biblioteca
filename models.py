@@ -1,14 +1,10 @@
 from django.db import models
 
-from usuarios.models import Usuario
-from Autor.models import Autor
-
-class livro(models.Model):
+class Usuario(models.Model):
     nome = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    senha = models.CharField(max_length=128)
     data_cadastro = models.DateTimeField(auto_now_add=True)
-    usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
-    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
-
 
 def __str__(self):
     return self.nome

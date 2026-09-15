@@ -1,7 +1,7 @@
 from django.http import JsonResponse
-from .models import livro
+from .models import Usuario
 
-def listar_livros(request):
-    livros = livro.objects.all().values('id','nome', 'data_cadastro')
-    return JsonResponse(list(livros), safe=False)
-# Create your views here.
+def listar_usuarios(request):
+    usuarios = Usuario.objects.all().values('id','nome', 'email', 'data_cadastro')
+    return JsonResponse(list(usuarios), safe=False)
+

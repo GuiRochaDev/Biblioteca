@@ -1,5 +1,4 @@
 from django.apps import AppConfig
 
-
-class LivrosConfig(AppConfig):
-    name = 'livros'
+class UsuarioConfig(AppConfig):
+    name = 'usuarios'
